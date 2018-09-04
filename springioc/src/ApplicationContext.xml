@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean id="address" class="bean.Address">
+        <property name="city" value="fuzhou"></property>
+    </bean>
+
+    <bean id="user" class="bean.User">
+        <property name="userName" value="tom"></property>
+        <property name="address" ref="address"></property>
+    </bean>
+
+</beans>
